@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<div id="home" class="container-fluid section d-flex textdiv" data-anchor="home">
+  {% comment %}<div class="col textdiv"> Why is this set to col-md-12? Changed to .col{% endcomment %}
+    <div class="center-div resp-font-body d-flex flex-column align-self-md-center">{% comment %}Got rid of mx-auto{% endcomment %}
+      <p>Nothing&amp;Co. — A creative studio focused on branding, art direction &amp; void awareness.</p>
+      <ul class="subtitle no-pad-no-margin text-center d-inline-block">{% comment %}Got rid of mx-auto, using text-center and inline-block for safari{% endcomment %}
+          <li class="subtitle-list-element d-inline-flex">
+            <a href="about.html">
+              <div class="inline-text">
+                About Us
+              <span class="underline home-underline">
+              </div>
+            </a>
+          </li>
+          <li class="subtitle-list-element d-inline-flex">
+            <a href="work.html">
+              <div class="inline-text">
+                Our Work
+              <span class="underline home-underline">
+              </div>
+            </a>
+          </li>
+        </ul>
+    </div>
+  {% comment %}</div>{% endcomment %}
+</div>
+{% include grid.html %}
+{% include cta.html %}

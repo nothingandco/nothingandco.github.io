@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <div id="barba-wrapper" class="page-content main-load cloak cloak-hide">
+      <div class="barba-container" data-namespace="home">
+        {{ content }}
+      </div>
+    </div>
+
+    {% include footer.html %}
+  <script src="/assets/js/jquery-3.2.1.min.js"></script>
+  <script src="/assets/js/bootstrap.min.js"></script>
+  <script src="/assets/js/ncscripts.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,45 @@
+/*-------------//
+// Contact Styles //
+//-------------*/
+
+/*/--Form Styles--/*/
+/*Form Outline*/
+.form-control-style{
+  border: 2px solid #bababa;
+  border-radius: 0px;
+}
+/*Placeholder Text Styles*/
+.form-control::-webkit-input-placeholder {
+color:#999;
+@include circular;
+}
+.form-control:-moz-placeholder { /* Firefox 18- */
+color:#999;
+@include circular;
+}
+.form-control::-moz-placeholder { /* Firefox 19+ */
+color:#999;
+@include circular;
+}
+.form-control:-ms-input-placeholder {
+color:#999;
+@include circular;
+}
+/*Button*/
+.btn.btn-primary.btn-contact{
+  background-color: #000;
+  border-color: #000;
+  border-radius: 0px;
+}
+/*Form Highlight*/
+textarea:focus, input:focus, .uneditable-input:focus {
+    border-color: rgba(0, 0, 0, 1) !important;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0) inset, 0 0 8px rgba(0, 0, 0, 0) !important;
+    outline: 0 none !important;
+}
+/* Margin/Padding */
+@media (max-width: 767px) {
+  .name-input{
+    margin-bottom: 1rem;
+  }
+}

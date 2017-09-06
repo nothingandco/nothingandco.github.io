@@ -1,0 +1,28 @@
+#__&Co __&Co __&Co __&Co __&Co __&Co __&Co __&Co __&Co __&Co __&Co __&Co
+#Co __&Co __&Co __&Co __&Co __&Co __&Co __&Co __&Co __&Co __&Co __&Co __
+#__&Co __&Co __&Co __&Co __&Co __&Co __&Co __&Co __&Co __&Co __&Co __&Co
+#Co __&Co __&Co __&Co __&Co __&Co __&Co __&Co __&Co __&Co __&Co __&Co __
+#---------
+# Settings
+#---------
+title: Nothing & Co
+email: studio@nothingandco.com
+description: > # this means to ignore newlines until "baseurl:"
+  Nothing&Co. — A creative studio focused on branding, art direction & void awareness.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+twitter_username: null
+github_username:  null
+#---------------
+# Build settings
+#---------------
+markdown: kramdown
+#-------
+# Ignore
+#-------
+exclude: [node_modules, Gruntfile.js, package.json, package-lock.json]
+#----------------
+# _SASS Directory
+#--------------
+sass:
+  sass_dir: assets/_sass

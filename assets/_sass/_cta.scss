@@ -1,0 +1,41 @@
+//Extra Margin to Hide Footer
+//@media(min-width: 769px){
+//  .site-cta{
+//    margin-bottom: 100px;
+//  }
+//}
+.site-cta{
+  text-align: center;
+  position: relative;
+  margin-top: -8px;
+  background-color: #fff;
+}
+@media (min-width: 768px){
+  .site-cta{
+    margin-bottom: 100px;
+  }
+}
+.site-cta .content-body{
+  display: table;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.cta-height{
+  height: 200px;
+}
+.content-body{
+  margin: 0 auto;
+}
+.site-cta .content{
+  display: table-cell;
+  vertical-align: middle;
+}
+.site-cta .talk{
+  font-size: 2.375em;
+}
+.site-cta-contact{
+  list-style: none;
+  svg{
+    transform: translate3d(0,4px,0);
+  }
+}

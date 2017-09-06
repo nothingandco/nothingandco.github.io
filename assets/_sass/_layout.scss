@@ -1,0 +1,78 @@
+/*-------------//
+// Layout Styles //
+//-------------*/
+
+/*/-- Home --/*/
+#home{
+  @media (max-width: 767px){
+    padding-top: 90px;
+  }
+}
+.section{
+  height: 100vh;
+  background-color: #fff;
+}
+
+//Responsive Font Body Text
+@media (max-width: 767px){
+  .resp-font-body p{
+    @include responsive-font(6vw, 28px, 30px);
+  }
+}
+@media (min-width: 768px){
+  .resp-font-body p{
+    @include responsive-font(3.5vw, 30px, 80px);
+  }
+}
+
+//Responsive Font Body Subtext
+@media (min-width: 768px){
+  .inline-text{
+    @include responsive-font(2.7708333vw, 20px, 70px);
+  }
+}
+@media (max-width: 767px){
+  .inline-text{
+    @include responsive-font(6vw, 28px, 30px);
+  }
+}
+
+@media (max-width: 767px){
+  //Padding for mobile screens
+  .textdiv{
+    padding-left: 20px!important;
+    padding-right: 20px!important;
+  }
+}
+  //Padding for small-medium screens
+@media (min-width: 768px){
+  .textdiv{
+    padding-left: 12%!important;
+    padding-right: 12%!important;
+  }
+}
+
+//Body Text Margins
+@media (min-width: 768px){
+  .resp-font-body p{
+    margin-bottom: 0.5rem;
+  }
+}
+
+//Subtext Margins
+.subtitle-list-element{
+  margin: 0.875rem;
+}
+
+//Subtext Hover Behavior
+.subtitle-list-element a{
+  @include no-text-decoration;
+  @include hover-black-text;
+}
+
+/*/-- Work --/*/
+
+//Grid Top Margin Work Page
+.work-page-margin-top{
+  margin-top: 144px;
+}

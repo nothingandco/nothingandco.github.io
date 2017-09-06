@@ -1,0 +1,63 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "UTF-8";
+
+
+
+// NC variables
+$base-font-family: "Apercu", Helvetica, Arial, sans-serif;
+//$base-font-size:   16px;
+//$base-font-weight: 400;
+//$small-font-size:  $base-font-size * 0.875;
+//$base-line-height: 1.5;
+
+//$spacing-unit:     30px;
+
+$text-color:       #000;
+$background-color: #fff;
+//Brand color - for navigation/footer/buttons/etc
+$brand-color:      #{$text-color};
+//Brand text color - for text on brand color objects
+$brand-text-color: #{$background-color};
+$grey-color:       #999999;
+$grey-color-light: lighten($grey-color, 13%);//
+$grey-color-dark:  darken($grey-color, 13%);
+
+// Width of the content area
+//$content-width:    800px;
+
+//$on-palm:          600px;
+//$on-laptop:        800px;
+
+
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+//@mixin media-query($device) {
+//    @media screen and (max-width: $device) {
+//        @content;
+//    }
+//}
+
+
+
+// Import partials from `sass_dir` (`/assets/_sass`)
+@import
+        "base",
+        "layout",
+        "navigation",
+        "grid",
+        "cta",
+        "footer",
+        "carousel",
+        "carousel-nav",
+        "contact",
+        "gallery",
+        "gallery-fullscreen"
+;

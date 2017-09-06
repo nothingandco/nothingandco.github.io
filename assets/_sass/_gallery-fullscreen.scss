@@ -1,0 +1,23 @@
+/*-------------//
+// Gallery Fullscreen //
+//-------------*/
+/*/-- Appearance --/*/
+/* Gallery Dimensions */
+@media (min-width: 576px){
+  .gallery-fullscrn{
+    max-width: 70%;
+  }
+}
+/* Modal Styles */
+.modal-content{
+  border: 0;
+}
+.modal-body{
+  padding: 0;
+}
+
+/*/-- Transitions --/*/
+/* Remove translate on fade in */
+.modal.fade .modal-dialog{
+  transform: translate(0,0);
+}
