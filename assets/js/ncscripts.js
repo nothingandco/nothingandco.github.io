@@ -71,3 +71,15 @@ jQuery(document).bind('keyup', function(e) {
 //$('.modal1').on('hidden.bs.modal', function() {
 //  $('.modal-backdrop').css({'background': ''});
 //});
+/*--------Carousel Swipe Control--------*/
+$(".carousel").swipe({
+
+  swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+
+    if (direction == 'left') $(this).carousel('next');
+    if (direction == 'right') $(this).carousel('prev');
+
+  },
+  allowPageScroll:"vertical"
+
+});
