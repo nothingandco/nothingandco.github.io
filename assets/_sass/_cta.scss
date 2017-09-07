@@ -38,4 +38,7 @@
   svg{
     transform: translate3d(0,4px,0);
   }
+  a{
+    @include no-text-decoration;
+  }
 }
