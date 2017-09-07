@@ -2,7 +2,14 @@
 layout: default
 ---
 
-<div class="container-fluid section d-flex justify-content-center align-items-center" style="background-color: white">
+<div id="logo-gallery" class="container-fluid section textdiv background-image mobile-pad-top" data-anchor="home">
+  {% comment %}<div class="col textdiv"> Why is this set to col-md-12? Changed to .col{% endcomment %}
+    <div class="center-div resp-font-body d-flex flex-column">{% comment %} Do I NEED two <div> elements? {% endcomment %}
+      <p class="no-pad-no-margin">Noriko Olling</p>
+    </div>
+  {% comment %}</div>{% endcomment %}
+</div>
+<div id="logo-carousel" class="container-fluid section d-flex justify-content-center align-items-center" style="background-color: white">
   <a class="carousel-control-prev" href="#featured" role="button" data-slide="prev">
   <span class="carousel-control-prev-icon" aria-hidden="true">
     <span class="sr-only">Previous</span>
@@ -18,7 +25,7 @@ layout: default
 
         <p class="no-pad-no-margin text-align-center" style="text-align: center">Logos &amp; Brand Marks</p>
 
-  
+
   {% comment %} Controls {% endcomment %}
 
 

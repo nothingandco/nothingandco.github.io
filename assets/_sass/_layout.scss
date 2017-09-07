@@ -76,3 +76,23 @@
 .work-page-margin-top{
   margin-top: 144px;
 }
+
+/*/-- Logos --/*/
+//Display Gallery Mobile + Tablet, Carousel Desktop
+
+@media (min-width: 768px){
+  #logo-gallery{
+    display: none;
+  }
+  #logo-carousel{
+    display: flex;
+  }
+}
+@media (max-width: 767px){
+  #logo-gallery{
+    display: flex;
+  }
+  #logo-carousel{
+    display: none;
+  }
+}
