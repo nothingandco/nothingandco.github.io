@@ -3,6 +3,25 @@
 //-------------*/
 /*/-- Appearance --/*/
 /* Gallery Padding */
+@media (min-width: 768px){
+#fullscreen-btn{
+  display: flex;
+}
 .gallery-container{
-  padding: 7.5rem 7.5rem 0 7.5rem;
+  padding: calc(6% - 29px) 6% 0 6%;
+}
+.gallery-container img.img-fluid:not(:last-child){
+    padding-bottom: 5px;
+}
+}
+@media (max-width: 767px){
+#fullscreen-btn{
+  display: none;
+}
+.gallery-container{
+  padding: 0rem;
+}
+.gallery-container img.img-fluid:not(:last-child){
+    padding-bottom: 3px;
+}
 }
