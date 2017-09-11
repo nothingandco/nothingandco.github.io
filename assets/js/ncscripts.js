@@ -43,9 +43,9 @@ $('#featured').on('slid.bs.carousel', function() {
    $('.num').html(''+currentIndex+'/'+totalItems+'');
 });
 
-/*--------Hide Logo on Scroll--------*/
-$(window).scroll(function(){
-        var scroll = $(window).scrollTop();
+/*--------Hide Logo on Scroll(Changed 'window' to 'document')--------*/
+$(document).scroll(function(){
+        var scroll = $(document).scrollTop();
             $('.scroll-hide').css({'opacity':(( 60-scroll )/60)});
 });
 
