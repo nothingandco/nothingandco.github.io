@@ -44,8 +44,8 @@ $('#featured').on('slid.bs.carousel', function() {
 });
 
 /*--------Hide Logo on Scroll(Changed 'window' to 'document')--------*/
-$(document).scroll(function(){
-        var scroll = $(document).scrollTop();
+$('body').scroll(function(){
+        var scroll = $('body').scrollTop();
             $('.scroll-hide').css({'opacity':(( 60-scroll )/60)});
 });
 
