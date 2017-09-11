@@ -92,7 +92,7 @@
 //Display Gallery Mobile + Tablet, Carousel Desktop
 
 @media (min-width: 768px){
-  #logo-gallery{
+  .logo-gallery{
     display: none;
   }
   #logo-carousel{
@@ -100,7 +100,7 @@
   }
 }
 @media (max-width: 767px){
-  #logo-gallery{
+  .logo-gallery{
     display: flex;
   }
   #logo-carousel{
