@@ -130,3 +130,10 @@ button{
 }
 //Bootstrap.min.css changes
 //Changed modal-backdrop color to white, opacity to 1 on .show
+@media (max-width: 768px){
+  body{
+    height: 100%;
+    position: fixed;
+    overflow-y: scroll;
+  }
+}

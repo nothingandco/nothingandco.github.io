@@ -21,7 +21,7 @@
 }
 @media (min-width: 768px){
   .resp-font-body p{
-    @include responsive-font(3.5vw, 30px, 80px);
+    @include responsive-font(3.5vw, 30px, 120px);
   }
 }
 
@@ -63,6 +63,11 @@
 .subtitle-list-element{
   margin: 0.875rem;
 }
+@media (max-width: 767px){
+  .subtitle-list-element{
+    margin: 0.875rem 0.875rem 0.875rem 0;
+  }
+}
 
 //Subtext Hover Behavior
 .subtitle-list-element a{
@@ -95,4 +100,9 @@
   #logo-carousel{
     display: none;
   }
+}
+//Gallery Resize
+.content.container-fluid{
+  width: 80%;
+  max-width: 1300px;
 }

@@ -4,8 +4,9 @@ layout: default
 
 <div id="logo-gallery" class="container-fluid section textdiv background-image mobile-pad-top" data-anchor="home">
   {% comment %}<div class="col textdiv"> Why is this set to col-md-12? Changed to .col{% endcomment %}
-    <div class="center-div resp-font-body d-flex flex-column">{% comment %} Do I NEED two <div> elements? {% endcomment %}
-      <p class="no-pad-no-margin">Noriko Olling</p>
+    <div class="center-div resp-font-body d-flex flex-column align-self-md-center">{% comment %} Do I NEED two <div> elements? {% endcomment %}
+      <p>Logos</p>
+      <p class="no-pad-no-margin">The following are a selection of logos and symbols we have created for brands around the world.</p>
     </div>
   {% comment %}</div>{% endcomment %}
 </div>
@@ -29,7 +30,7 @@ layout: default
   {% comment %} Controls {% endcomment %}
 
 
-  <div class="content container">
+  <div class="content container-fluid">
     <div class="row">
       <section class="col-sm-12">
 
@@ -80,10 +81,8 @@ layout: default
   </div>{% comment %}<!-- content container -->{% endcomment %}
 
 <div class="num" style="text-align: center"></div>
-
+{% include gallery-nav.html %}
       </section>
     </div>{% comment %}<!-- row -->{% endcomment %}
-
-
 
 </div>{% comment %}<!-- content container -->{% endcomment %}

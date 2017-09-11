@@ -27,7 +27,7 @@
 	width: 33.3333333%; /* Fallback */
 	width: -webkit-calc(100% / 3);
 	width: calc(100% / 3);
-  /*border: 2px solid white;*/
+  //border: 1px solid white;
 }
 
 @media (max-width: 767px){
@@ -55,6 +55,7 @@
 	top: 0px;
 	right: 0px;
 	bottom: 0px;
+  background: rgba(255,255,255,1);
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -65,10 +66,11 @@
   align-items: center;
   text-align: center;
   transition: all 0.2s ease;
+  opacity: 0;
 }
 
-.image-grid-active{
-  opacity: 1;
+.image-grid li a:hover div{
+  opacity: 0.8;
 }
 
 .image-grid li a div h3 {

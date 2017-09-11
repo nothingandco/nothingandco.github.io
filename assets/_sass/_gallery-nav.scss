@@ -1,0 +1,96 @@
+/*-------------//
+// Footer Styles //
+//-------------*/
+
+@media (min-width: 768px){
+#container-master{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100px;
+  background-color: #000;
+  position: fixed;
+  z-index: -100;
+  bottom: 0px;
+  width: 100%;
+}
+}
+#container {
+  display: flex;
+  //justify-content: space-between;
+  margin: 0;
+}
+#container span{
+  color: #999999;
+  @include responsive-font(2vw, 17px, 24px);
+}
+*{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styles for cta-first-li */
+//Remove text-decoration
+.cta-first-li a{
+  @include no-text-decoration;
+}
+/* Styles for cta-social */
+.cta-social{
+  //margin-left: 190px;
+  flex:1;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.cta-social li{
+  display: inline-block;
+}
+/*@media(max-width: 500px){
+  .cta-social{
+    display: none;
+  }
+  #container{
+    flex-flow: column-reverse;
+  }
+  #container > li:last-child{
+    margin-left: 22px;
+  }
+}*/
+.cta-social > li:first-child{
+  margin-right: 35px;
+}
+.cta-social > li:last-child{
+  margin-left: 35px;
+  //margin-right: 35px;
+}
+#container > li:first-child{
+  margin-left: 22px;
+  flex:1;
+  justify-content: flex-start;
+  display: flex;
+  align-items: center;
+}
+#container > li:last-child{
+  margin-right: 30px;
+  flex:1;
+  justify-content: flex-end;
+  display: flex;
+  align-items: center;
+}
+/* Styles for cta-last-li */
+//Positions svg + text correctly
+.cta-last-li{
+  transform: translate3d(0,-11px,0);
+}
+.cta-last-li svg{
+  transform: translate3d(0,11px,0);
+}
+.cta-last-li span{
+  transform: translate3d(0,7px,0);
+  display: inline-block;
+}
+//Remove text-decoration
+.cta-last-li a{
+  @include no-text-decoration;
+}
