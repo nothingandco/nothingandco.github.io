@@ -45,8 +45,8 @@ $('#featured').on('slid.bs.carousel', function() {
 
 /*--------Hide Logo on Scroll(Changed 'window' to 'document')--------*/
 $('#barba-wrapper').scroll(function(){
-        var scroll = $('body').scrollTop();
-            $('#barba-wrapper').css({'opacity':(( 60-scroll )/60)});
+        var scroll = $('#barba-wrapper').scrollTop();
+            $('.scroll-hide').css({'opacity':(( 60-scroll )/60)});
 });
 
 /*--------Carousel Key Control--------*/
