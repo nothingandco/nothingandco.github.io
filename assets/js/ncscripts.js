@@ -44,8 +44,8 @@ $('#featured').on('slid.bs.carousel', function() {
 });
 
 /*--------Hide Logo on Scroll(Changed 'window' to 'document')--------*/
-$('#barba-wrapper').scroll(function(){
-        var scroll = $('#barba-wrapper').scrollTop();
+$(document).scroll(function(){
+        var scroll = $(document).scrollTop();
             $('.scroll-hide').css({'opacity':(( 60-scroll )/60)});
 });
 
