@@ -195,7 +195,7 @@ div.collapse ul.navbar-nav > li:last-child > a{
   transition: all .5s cubic-bezier(0.17, 0.04, 0.03, 0.94);
 }
 .menu-transform-active {
-  transform: translate3d(0,0,0)
+  transform: translate3d(0,0,0);
 }
 
 //This is a bad title

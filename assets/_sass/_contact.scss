@@ -84,3 +84,9 @@ textarea:focus, input:focus, .uneditable-input:focus {
   font-size: 24px;
   }
 }
+
+@media (min-width: 768px){
+  #contact-page{
+    margin-bottom: 100px;
+  }
+}

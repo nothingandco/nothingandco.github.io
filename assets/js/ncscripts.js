@@ -82,3 +82,12 @@ function calcVH() {
   });
 })(jQuery);
 */
+$(window).resize(function() {
+  var sWidth = $( window ).width();
+  if(sWidth > 768) {
+    $('.burger').removeClass('active');
+    $('.cloak-hide').removeClass('cloak-hide-active');
+    $('.menu-transform').removeClass('menu-transform-active');
+    $('.mobile-nav-transition').removeClass('mobile-nav-transition-active');
+  }
+});
