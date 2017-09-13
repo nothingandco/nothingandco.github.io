@@ -71,7 +71,7 @@ jQuery(document).bind('keyup', function(e) {
 //$('.modal1').on('hidden.bs.modal', function() {
 //  $('.modal-backdrop').css({'background': ''});
 //});
-/*--------Calculates vh on load (mobile only) --------
+/*--------Calculates vh on load (mobile only) --------*/
 function calcVH() {
     $('#temp').innerHeight( $(this).innerHeight() );
 }
@@ -81,7 +81,7 @@ function calcVH() {
     calcVH();
   });
 })(jQuery);
-*/
+
 $(window).resize(function() {
   var sWidth = $( window ).width();
   if(sWidth > 768) {
