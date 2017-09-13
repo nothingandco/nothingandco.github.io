@@ -20,19 +20,19 @@ layout: default
         </a>
       </li>
   </ul>
-  <form class="w-100 contact form">
+  <form role="form" action="http://formspree.io/studio@nothingandco.com" method="POST" class="w-100 contact form">
   <fieldset class="form-group">
 
     <legend>Let's Talk</legend>
     <div class="form-group row">
       <div class="col-md-6 name-input">
         <label class="form-control-label sr-only" for="username">Name</label>
-        <input class="form-control form-control-style" type="text" id="username" placeholder="Name">
+        <input class="form-control form-control-style" name="name" type="text" id="username" placeholder="Name" required>
       </div><!-- form-group -->
 
       <div class="col-md-6">
         <label class="form-control-label sr-only" for="useremail">Email</label>
-        <input class="form-control form-control-style" type="text" id="useremail" placeholder="Email">
+        <input class="form-control form-control-style" name="_replyto" type="text" id="useremail" placeholder="Email">
       </div><!-- form-group -->
     </div><!-- form-group -->
 
@@ -40,7 +40,7 @@ layout: default
       <label class="form-control-label sr-only" for="companyname">Company</label>
 
       <div class="col-md-12">
-        <input class="form-control form-control-style" type="text" id="companyname" placeholder="Company">
+        <input class="form-control form-control-style" name="companyName" type="text" id="companyname" placeholder="Company">
       </div>
 
     </div><!-- form-group -->
@@ -48,13 +48,13 @@ layout: default
     <div class="form-group row">
       <label class="form-control-label sr-only" for="usermessage">Message</label>
       <div class="col-md-12">
-        <textarea class="form-control form-control-style" rows="6" id="usermessage" placeholder="Message"></textarea>
+        <textarea class="form-control form-control-style" name="message" rows="6" id="usermessage" placeholder="Message"></textarea>
       </div>
     </div><!-- form-group -->
 
     <div class="form-group row">
       <div class="col-md-10">
-        <button class="btn btn-primary btn-contact" type="submit">Send</button>
+        <button class="btn btn-primary btn-contact" type="submit" value="Send">Send</button>
       </div><!-- offset-col -->
     </div><!-- form-group -->
 
